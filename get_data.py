@@ -13,5 +13,5 @@ deaths = 'time_series_19-covid-Deaths.csv'
 recover = 'time_series_19-covid-Recovered.csv'
 
 urllib.request.urlretrieve(file_url + confirmations, output_dir + confirmations)
-urllib.request.urlretrieve(file_url + confirmations, output_dir + deaths)
-urllib.request.urlretrieve(file_url + confirmations, output_dir + recover)
+urllib.request.urlretrieve(file_url + deaths, output_dir + deaths)
+urllib.request.urlretrieve(file_url + recover, output_dir + recover)
