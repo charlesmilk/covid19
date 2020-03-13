@@ -2,9 +2,10 @@ import urllib.request
 import os
 
 working_dir = os.getcwd()
-output_dir = working_dir + '/data/'
 
-os.mkdir(working_dir + '/data')
+output_dir = working_dir + '/data/'
+if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
 
 file_url = 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/'
 
